@@ -1,12 +1,12 @@
 const translations={
     en:{
-        welcome:"We are currently workingon a new super awesome website.",
+        welcome:"We are currently working on a new version of our website to make your searches easier.",
         welcomtosbm:"Welcome to SMB International Sport",
-        title2:"We are SMB. We make awesome stuff.",
+        title2:"Discover SMB International: Your Partner in the Sports World.",
         start:"Start A Conversation ",
         visit:"Visit Our Office",
         find:"Find Us On",
-        txt:"SMB International is an international agency passionate about high-level sports, based in Dubaï.",
+        txt:" SMB is an international agency passionate about high-level sports, based in Dubaï.",
         Launching :"Launching In " ,
         days:"Days",
         h:"H",
@@ -14,13 +14,13 @@ const translations={
         s:"S"
     },
     ar:{
-        welcome:"نحن نعمل حاليا على موقع إلكتروني جديد فائق الروعة.",
+        welcome:" نحن حاليًا نعمل على نسخة جديدة من موقعنا على الويب لتسهيل بحثك ",
         welcomtosbm:"  مرحبًا بكم في سمب الرياضة الدولية ",
-        title2:"نحن سمب نقوم بصنع أشياء رائعة",
+        title2:" اكتشف SMB International: شريكك في عالم الرياضة.",
         start:"بدء المحادثة",
         visit:"زيارة مكتبنا",
         find:"العثور علينا",
-        txt:" سمب الدولية هي وكالة دولية متخصصة في الرياضة عالية المستوى، مقرها في دبي",
+        txt:"  SMB هي وكالة دولية متخصصة في الرياضة على مستوى عالمي، مقرها في دبي. " ,
         Launching :"الإطلاق في " ,
         days:"أيام",
         h:"س",
@@ -28,29 +28,28 @@ const translations={
         s:"ث"
     },
     fr:{
-        welcome:"Nous travaillons actuellement sur un nouveau site web , super et génial.",
+        welcome:"Nous travaillons actuellement sur une nouvelle version de notre site web afin de faciliter vos recherches.",
         welcomtosbm:"Bienvenue chez SMB International Sport",
-        title2:"Nous sommes SMB. Nous créons des choses géniales.",
+        title2:"Découvrez SMB International Votre Partenaire dans le Monde Sportif",
         start:"Commencez une conversation",
         visit:" Visitez notre bureau",
         find:"Trouvez-nous sur",
-        txt:"SMB International est une agence internationale passionnée par le sport de haut niveau, basée à Dubaï.",
-        Launching :"Lancement en " ,
+        txt:"SMB est une agence internationale passionnée par les sports de haut niveau, basée à Dubaï.",
+        Launching :"LANCEMENT DANS" ,
         days:"Jours",
         h:"H",
         m:"M",
         s:"S"
     },
     de:{
-        welcome:"Wir arbeiten derzeit auf einem neuen supergeilen Webseite.",
+        welcome:"Wir arbeiten derzeit an einer neuen Version unserer Website, um Ihre Suche zu erleichtern.",
         welcomtosbm:"Willkommen bei SMB International Sport",
-        title2:"Wir sind SMB. Wir machen großartige Sachen.",
+        title2:"Entdecken Sie SMB International - Ihr Partner in der Sportwelt.",
         start:"Beginnen Sie ein Gespräch ",
         visit:"Besuchen Sie unser Büro",
         find:" Finden Sie uns auf",
-        txt:"SMB International ist eine internationale Agentur, die sich leidenschaftlich für den Hochleistungssport engagiert und ihren Sitz in Dubai hat."
-  ,
-        Launching :"Start in" ,
+        txt:"SMB ist eine internationale Agentur, die sich leidenschaftlich für Spitzensport begeistert und ihren Sitz in Dubai hat.",
+        Launching :"STARTET IN" ,
          days:"Tage",
         h:"H",
         m:"M",
@@ -59,107 +58,127 @@ const translations={
     
     
     es:{
-        welcome:"Actualmente estamos trabajando en un nuevo super impresionante sitio web.",
+        welcome:"Actualmente estamos trabajando en una nueva versión de nuestro sitio web para facilitar sus búsquedas.",
         welcomtosbm:"Bienvenido a SMB International Sport",
-        title2:" Somos SMB. Creamos cosas increíbles. ",
+        title2:"Descubre SMB International - Tu socio en el mundo deportivo. ",
         start:"Iniciar una conversación",
         visit:"Visitar nuestra oficina",
         find:"Encontrarnos en",
-        txt:" SMB International es una agencia internacional apasionada por el deporte de alto nivel, con sede en Dubái.",
-        Launching :"Lanzamiento en" , 
+        txt:"SMB es una agencia internacional apasionada por el deporte de alto nivel, con sede en Dubái.",
+        Launching :"LANZAMIENTO EN" , 
         days:"Días",
         h:"H",
         m:"M",
         s:"S"
     },
+    ru:{
+        welcome: "Мы в настоящее время работаем над новой версией нашего веб-сайта, чтобы облегчить ваши поиски.",
+        welcomtosbm: "Добро пожаловать в SMB International Sport",
+        title2: "Познакомьтесь с компанией SMB International - вашим партнером в спортивном мире.",
+        start: "Начать разговор",
+        visit: "Посетите наш офис",
+        find: "Найдите нас по адресу",
+        txt: "SMB - это международное агентство, страстно увлеченное высоким уровнем спорта, с базой в Дубае.",
+        Launching: "ЗАПУСК В",
+        days: "Дней",
+        h: "Ч",
+        m: "М",
+        s: "С"
+    },
 
 }
 
+$(document).ready(function() {
+    $('#selectpicker').on('change', function() {
+        const lang = $(this).val();
+            if(lang=="ar"){  
+                $('#welcome').text(translations.ar.welcome);
+        $('#welcomtosbm').html(translations.ar.welcomtosbm);
+        $('#title2').text(translations.ar.title2);
+        $('#start').text(translations.ar.start);
+        $('#visit').text(translations.ar.visit);
+        $('#find').text(translations.ar.find);
+        $('#txt').text(translations.ar.txt);
+        $('#Launching').text(translations.ar.Launching);
+        $('#days').text(translations.ar.days);
+        $('#h').text(translations.ar.h);
+        $('#m').text(translations.ar.m);
+        $('#s').text(translations.ar.s);
+            
+              
+            }else if(lang=="en"){  
+                $('#welcome').text(translations.en.welcome);
+                $('#welcomtosbm').html(translations.en.welcomtosbm);
+                $('#title2').text(translations.en.title2);
+                $('#start').text(translations.en.start);
+                $('#visit').text(translations.en.visit);
+                $('#find').text(translations.en.find);
+                $('#txt').text(translations.en.txt);
+                $('#Launching').text(translations.en.Launching);
+                $('#days').text(translations.en.days);
+                $('#h').text(translations.en.h);
+                $('#m').text(translations.en.m);
+                $('#s').text(translations.en.s);
+              
+            }else if(lang=="fr"){
+                $('#welcome').text(translations.fr.welcome);
+        $('#welcomtosbm').html(translations.fr.welcomtosbm);
+        $('#title2').text(translations.fr.title2);
+        $('#start').text(translations.fr.start);
+        $('#visit').text(translations.fr.visit);
+        $('#find').text(translations.fr.find);
+        $('#txt').text(translations.fr.txt);
+        $('#Launching').text(translations.fr.Launching);
+        $('#days').text(translations.fr.days);
+        $('#h').text(translations.fr.h);
+        $('#m').text(translations.fr.m);
+        $('#s').text(translations.fr.s);
+            }else if(lang=="de"){
+                $('#welcome').text(translations.de.welcome);
+                $('#welcomtosbm').html(translations.de.welcomtosbm);
+                $('#title2').text(translations.de.title2);
+                $('#start').text(translations.de.start);
+                $('#visit').text(translations.de.visit);
+                $('#find').text(translations.de.find);
+                $('#txt').text(translations.de.txt);
+                $('#Launching').text(translations.de.Launching);
+                $('#days').text(translations.de.days);
+                $('#h').text(translations.de.h);
+                $('#m').text(translations.de.m);
+                $('#s').text(translations.de.s);
+            }
+            else if(lang=="es"){
+                $('#welcome').text(translations.es.welcome);
+                $('#welcomtosbm').html(translations.es.welcomtosbm);
+                $('#title2').text(translations.es.title2);
+                $('#start').text(translations.es.start);
+                $('#visit').text(translations.es.visit);
+                $('#find').text(translations.es.find);
+                $('#txt').text(translations.es.txt);
+                $('#Launching').text(translations.es.Launching);
+                $('#days').text(translations.es.days);
+                $('#h').text(translations.es.h);
+                $('#m').text(translations.es.m);
+                $('#s').text(translations.es.s);
+            }   else if(lang=="ru"){
+                $('#welcome').text(translations.ru.welcome);
+                $('#welcomtosbm').html(translations.ru.welcomtosbm);
+                $('#title2').text(translations.ru.title2);
+                $('#start').text(translations.ru.start);
+                $('#visit').text(translations.ru.visit);
+                $('#find').text(translations.ru.find);
+                $('#txt').text(translations.ru.txt);
+                $('#Launching').text(translations.ru.Launching);
+                $('#days').text(translations.ru.days);
+                $('#h').text(translations.ru.h);
+                $('#m').text(translations.ru.m);
+                $('#s').text(translations.ru.s);
+            }
+        
+        
+        
+       
+    });
+});
 
-const languageSelectop=document.querySelector("select");
-let welcome=document.getElementById('welcome')
-let welcomtosbm=document.getElementById('welcomtosbm')
-let title2=document.getElementById('title2')
-let start=document.getElementById('start')
-let find=document.getElementById('find')
-let visit=document.getElementById('visit')
-let txt=document.getElementById('txt')
-let Launching=document.getElementById('Launching')
-let days=document.getElementById('days')
-let h=document.getElementById('h')
-let m=document.getElementById('m')
-let s=document.getElementById('s')
 
-languageSelectop.addEventListener( "change", (event)=>{
-setLanguage(event.target.value);
-})
-
-const setLanguage=(lang)=> {
-    if(lang=="ar"){  
-        welcome.innerText=translations.ar.welcome;
-        welcomtosbm.innerHTML = translations.ar.welcomtosbm;
-        title2.innerText= translations.ar.title2;
-        start.innerText= translations.ar.start; 
-        visit.innerText= translations.ar.visit;
-       find.innerText=translations.ar.find;
-       txt.innerText=translations.ar.txt;
-       Launching.innerText=translations.ar.Launching;
-       days.innerText=translations.ar.days;
-       h.innerText=translations.ar.h;
-       m.innerText=translations.ar.m;
-       s.innerText=translations.ar.s;
-      
-    }else if(lang=="en"){  
-        welcome.innerText=translations.en.welcome; 
-        welcomtosbm.innerHTML = translations.en.welcomtosbm;
-         title2.innerText= translations.en.title2;
-         start.innerText= translations.en.start; 
-         visit.innerText= translations.en.visit;
-        find.innerText=translations.en.find;
-        txt.innerText=translations.en.txt;
-        Launching.innerText=translations.en.Launching;
-        days.innerText=translations.en.days;
-       h.innerText=translations.en.h;
-       m.innerText=translations.en.m;
-       s.innerText=translations.en.s;
-      
-    }else if(lang=="fr"){
-        welcome.innerText=translations.fr.welcome; 
-        welcomtosbm.innerHTML = translations.fr.welcomtosbm; title2.innerText= translations.fr.title2;
-        start.innerText= translations.fr.start; 
-        visit.innerText= translations.fr.visit;
-       find.innerText=translations.fr.find;
-       txt.innerText=translations.fr.txt;
-       Launching.innerText=translations.fr.Launching;
-       days.innerText=translations.fr.days;
-       h.innerText=translations.fr.h;
-       m.innerText=translations.fr.m;
-       s.innerText=translations.fr.s;
-    }else if(lang=="de"){
-        welcome.innerText=translations.de.welcome;
-         welcomtosbm.innerHTML = translations.de.welcomtosbm;
-         title2.innerText= translations.de.title2;start.innerText= translations.de.start; 
-         visit.innerText= translations.de.visit;
-        find.innerText=translations.de.find;
-        txt.innerText=translations.de.txt;
-        Launching.innerText=translations.de.Launching;
-        days.innerText=translations.de.days;
-       h.innerText=translations.de.h;
-       m.innerText=translations.de.m;
-       s.innerText=translations.de.s;
-    }
-    else if(lang=="es"){
-        welcome.innerText=translations.es.welcome;
-         welcomtosbm.innerHTML = translations.es.welcomtosbm;
-         title2.innerText= translations.es.title2;start.innerText= translations.es.start; 
-         visit.innerText= translations.es.visit;
-        find.innerText=translations.es.find;
-        txt.innerText=translations.es.txt;
-        Launching.innerText=translations.es.Launching;
-        days.innerText=translations.es.days;
-       h.innerText=translations.es.h;
-       m.innerText=translations.es.m;
-       s.innerText=translations.es.s;
-    }
-
-}

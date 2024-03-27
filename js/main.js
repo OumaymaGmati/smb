@@ -4,6 +4,44 @@
  * ------------------------------------------------------------------- */
 
 (function($) {
+     // JavaScript code for the countdown timer
+     const countDownDate = new Date("2024-05-01T00:00:00").getTime();
+     const countdownElement = document.getElementById("countdown");
+     const daysElement = document.querySelector(".timeDays");
+     const hoursElement = document.querySelector(".timeHours");
+     const minutesElement = document.querySelector(".timeMin");
+     const secondsElement = document.querySelector(".timeSec");
+ 
+     const updateCountdown = () => {
+         const now = new Date().getTime();
+         const distance = countDownDate - now;
+ 
+         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+ 
+         // Update countdown elements
+         daysElement.textContent = days;
+         hoursElement.textContent = hours;
+         minutesElement.textContent = minutes;
+         secondsElement.textContent = seconds;
+ 
+         if (distance < 0) {
+             clearInterval(interval);
+             countdownElement.textContent = "The wait is over!";
+         }
+     };
+ 
+     updateCountdown();
+     const interval = setInterval(updateCountdown, 1000);
+ 
+           // Mettre à jour l'année actuelle
+     document.getElementById("currentYear").innerText = new Date().getFullYear();
+ 
+     $(function(){
+        $('.selectpicker').selectpicker();
+    });
 
     "use strict";
     
@@ -63,7 +101,7 @@
 
 
    /* slick slider
-    * ------------------------------------------------------ */
+    * ------------------------------------------------------
     var ssSlickSlider = function() {
         
         $('.home-slider').slick({
@@ -75,18 +113,18 @@
             speed: 3000
         });
 
-    };
+    };*/
 
 
    /* placeholder plugin settings
-    * ------------------------------------------------------ */
+    * ------------------------------------------------------/
     var ssPlaceholder = function() {
         $('input, textarea, select').placeholder();
     };
-
+*/
 
    /* final countdown
-    * ------------------------------------------------------ */
+    * ------------------------------------------------------ 
     var ssFinalCountdown = function() {
 
         var finalDate =  new Date("March 25, 2021 15:37:25").getTime();
@@ -111,9 +149,9 @@
         });
     };
 
-
+*/
    /* AjaxChimp
-    * ------------------------------------------------------ */
+    * ------------------------------------------------------ /
     var ssAjaxChimp = function() {
         
         $('#mc-form').ajaxChimp({
@@ -142,7 +180,7 @@
             5: '<i class="fas fa-exclamation-triangle"></i> E-mail address is not valid.'
         }
     };
-
+*/
 
    /* initialize
     * ------------------------------------------------------ */
@@ -150,10 +188,10 @@
         
         ssPreloader();
         ssInfoToggle();
-        ssSlickSlider();
-        ssPlaceholder();
-        ssFinalCountdown();
-        ssAjaxChimp();
+      //  ssSlickSlider();
+        //ssPlaceholder();
+       // ssFinalCountdown();
+     //   ssAjaxChimp();
 
     })();
 
