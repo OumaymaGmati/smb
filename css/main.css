@@ -2201,8 +2201,13 @@ html.no-csstransitions .home-content__main {
 
 
 /* Styles spécifiques à la mise en page responsive */
-@media (max-width: 380px) {
+@media (max-width: 700px) {
  
+  .home-logo {
+   
+    left:60px; 
+   
+  }
   
 }
 
