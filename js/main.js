@@ -5,7 +5,7 @@
 
 (function($) {
      // JavaScript code for the countdown timer
-     const countDownDate = new Date("2024-05-01T00:00:00").getTime();
+     const countDownDate = new Date("2024-06-02T00:00:00").getTime();
      const countdownElement = document.getElementById("countdown");
      const daysElement = document.querySelector(".timeDays");
      const hoursElement = document.querySelector(".timeHours");

@@ -6,7 +6,8 @@ const translations={
         start:"Start A Conversation ",
         visit:"Visit Our Office",
         find:"Find Us On",
-        txt:" SMB is an international agency passionate about high-level sports, based in Dubaï.",
+        txt:" SMB is an international agency passionate about high-level sports,",
+        dubai:"based in Dubaï.",
         Launching :"Launching In " ,
         days:"Days",
         h:"H",
@@ -20,7 +21,8 @@ const translations={
         start:"بدء المحادثة",
         visit:"زيارة مكتبنا",
         find:"العثور علينا",
-        txt:"  SMB هي وكالة دولية متخصصة في الرياضة على مستوى عالمي، مقرها في دبي. " ,
+        txt:"  SMB هي وكالة دولية متخصصة في الرياضة على مستوى عالمي، مقرها " ,
+        dubai:" في دبي",
         Launching :"الإطلاق في " ,
         days:"أيام",
         h:"س",
@@ -34,7 +36,8 @@ const translations={
         start:"Commencez une conversation",
         visit:" Visitez notre bureau",
         find:"Trouvez-nous sur",
-        txt:"SMB est une agence internationale passionnée par les sports de haut niveau, basée à Dubaï.",
+        txt:"SMB est une agence internationale passionnée par les sports de haut niveau,",
+        dubai:"basée à Dubaï.",
         Launching :"LANCEMENT DANS" ,
         days:"Jours",
         h:"H",
@@ -48,7 +51,8 @@ const translations={
         start:"Beginnen Sie ein Gespräch ",
         visit:"Besuchen Sie unser Büro",
         find:" Finden Sie uns auf",
-        txt:"SMB ist eine internationale Agentur, die sich leidenschaftlich für Spitzensport begeistert und ihren Sitz in Dubai hat.",
+        txt:"SMB ist eine internationale Agentur, die sich leidenschaftlich für Spitzensport begeistert und ihren Sitz ",
+        dubai:"in Dubai hat.",
         Launching :"STARTET IN" ,
          days:"Tage",
         h:"H",
@@ -64,7 +68,8 @@ const translations={
         start:"Iniciar una conversación",
         visit:"Visitar nuestra oficina",
         find:"Encontrarnos en",
-        txt:"SMB es una agencia internacional apasionada por el deporte de alto nivel, con sede en Dubái.",
+        txt:"SMB es una agencia internacional apasionada por el deporte de alto nivel, ",
+        dubai:"con sede en Dubái.",
         Launching :"LANZAMIENTO EN" , 
         days:"Días",
         h:"H",
@@ -78,7 +83,8 @@ const translations={
         start: "Начать разговор",
         visit: "Посетите наш офис",
         find: "Найдите нас по адресу",
-        txt: "SMB - это международное агентство, страстно увлеченное высоким уровнем спорта, с базой в Дубае.",
+        txt: "SMB - это международное агентство, страстно увлеченное высоким уровнем спорта,",
+        dubai:" с базой в Дубае.",
         Launching: "ЗАПУСК В",
         days: "Дней",
         h: "Ч",
@@ -104,6 +110,7 @@ $(document).ready(function() {
         $('#h').text(translations.ar.h);
         $('#m').text(translations.ar.m);
         $('#s').text(translations.ar.s);
+        $('#dubai').text(translations.ar.dubai);
             
               
             }else if(lang=="en"){  
@@ -119,6 +126,7 @@ $(document).ready(function() {
                 $('#h').text(translations.en.h);
                 $('#m').text(translations.en.m);
                 $('#s').text(translations.en.s);
+                $('#dubai').text(translations.en.dubai);
               
             }else if(lang=="fr"){
                 $('#welcome').text(translations.fr.welcome);
@@ -133,6 +141,7 @@ $(document).ready(function() {
         $('#h').text(translations.fr.h);
         $('#m').text(translations.fr.m);
         $('#s').text(translations.fr.s);
+        $('#dubai').text(translations.fr.dubai);
             }else if(lang=="de"){
                 $('#welcome').text(translations.de.welcome);
                 $('#welcomtosbm').html(translations.de.welcomtosbm);
@@ -146,6 +155,7 @@ $(document).ready(function() {
                 $('#h').text(translations.de.h);
                 $('#m').text(translations.de.m);
                 $('#s').text(translations.de.s);
+                $('#dubai').text(translations.de.dubai);
             }
             else if(lang=="es"){
                 $('#welcome').text(translations.es.welcome);
@@ -160,6 +170,7 @@ $(document).ready(function() {
                 $('#h').text(translations.es.h);
                 $('#m').text(translations.es.m);
                 $('#s').text(translations.es.s);
+                $('#dubai').text(translations.es.dubai);
             }   else if(lang=="ru"){
                 $('#welcome').text(translations.ru.welcome);
                 $('#welcomtosbm').html(translations.ru.welcomtosbm);
@@ -173,6 +184,7 @@ $(document).ready(function() {
                 $('#h').text(translations.ru.h);
                 $('#m').text(translations.ru.m);
                 $('#s').text(translations.ru.s);
+                $('#dubai').text(translations.ru.dubai);
             }
         
         
