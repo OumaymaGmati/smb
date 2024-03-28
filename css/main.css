@@ -2175,8 +2175,8 @@ html.no-csstransitions .home-content__main {
   font-size: 12px;
   text-transform: uppercase;
   color: white;
-  height:50px;
-  width:50px;
+  height:45px;
+  width:45px;
   line-height: 42px;
 
 }
@@ -2195,8 +2195,8 @@ html.no-csstransitions .home-content__main {
 
 
 .home-logo img {
-  width: 100px;
-  height:70px;
+  width:70px;
+  height:35px;
 }
 
 
@@ -2231,7 +2231,7 @@ html.no-csstransitions .home-content__main {
 
 .info-menu-icon {
   display: block;
-  width: 30px;
+  width:20px;
   height: 2px;
   margin-top: -1px;
   position: absolute;
