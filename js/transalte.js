@@ -99,6 +99,7 @@ $(document).ready(function () {
         const lang = $(this).val();
         if (lang == "ar") {
             $('#welcome').text(translations.ar.welcome);
+            $('#welcome').css('direction', 'rtl');
             $('#welcomtosbm').html(translations.ar.welcomtosbm);
             $('#title2').text(translations.ar.title2);
             $('#title2').css('direction', 'rtl');
@@ -116,6 +117,7 @@ $(document).ready(function () {
             $('.dubaicss').css('direction', 'rtl');
         } else if (lang == "en") {
             $('#welcome').text(translations.en.welcome);
+            $('#welcome').css('direction', '');
             $('#welcomtosbm').html(translations.en.welcomtosbm);
             $('#title2').text(translations.en.title2);
             $('#title2').css('direction', '');
@@ -133,6 +135,7 @@ $(document).ready(function () {
             $('.dubaicss').css('direction', '');
         } else if (lang == "fr") {
             $('#welcome').text(translations.fr.welcome);
+              $('#welcome').css('direction', '');
             $('#welcomtosbm').html(translations.fr.welcomtosbm);
             $('#title2').text(translations.fr.title2);
             $('#title2').css('direction', '');
@@ -150,6 +153,7 @@ $(document).ready(function () {
                $('.dubaicss').css('direction', '');
         } else if (lang == "de") {
             $('#welcome').text(translations.de.welcome);
+            $('#welcome').css('direction', '');
             $('#welcomtosbm').html(translations.de.welcomtosbm);
             $('#title2').text(translations.de.title2);
             $('#title2').css('direction', '');
@@ -168,6 +172,7 @@ $(document).ready(function () {
         }
         else if (lang == "es") {
             $('#welcome').text(translations.es.welcome);
+            $('#welcome').css('direction', '');
             $('#welcomtosbm').html(translations.es.welcomtosbm);
             $('#title2').text(translations.es.title2);
             $('#title2').css('direction', '');
@@ -185,6 +190,7 @@ $(document).ready(function () {
             $('.dubaicss').css('direction', '');
         } else if (lang == "ru") {
             $('#welcome').text(translations.ru.welcome);
+            $('#welcome').css('direction', '');
             $('#welcomtosbm').html(translations.ru.welcomtosbm);
             $('#title2').text(translations.ru.title2);
             $('#title2').css('direction', '');
