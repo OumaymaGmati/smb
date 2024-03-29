@@ -47,33 +47,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
     
-    <style>
+  
+<style>
        
-        .btn-default {
-        color: #ffffff;
-        background-color: transparent  !important;
-        border-color:transparent  !important;
-}.row {
-    width: 94%;
-    max-width: 1200px;
-    margin: 0 auto;
-}.btn-default.focus, .btn-default:focus {
-    color: #ffffff !important;
-    background-color: #e6e6e6;
-    border-color: #8c8c8c;
-}
- .open>.dropdown-toggle.btn-default:hover {
-    color: #ffffff  !important;
-    background-color: #d4d4d4;
-    /* border-color: #8c8c8c; */
-}
-.btn-default.focus, .btn-default:focus {
-    color: #ffffff !important;
-    /* background-color: #e6e6e6; */
-    border-color: #8c8c8c;
-}
-
-    </style>
+       .btn-default {
+       color: #ffffff;
+       background-color: transparent  !important;
+       border-color:transparent  !important;
+       }.row {
+       width: 94%;
+       max-width: 1200px;
+       margin: 0 auto;
+       }.btn-default.focus, .btn-default:focus {
+         color: #ffffff !important;
+         background-color: #e6e6e6;
+         border-color: #8c8c8c;
+       }
+       .open>.dropdown-toggle.btn-default:hover {
+          color: #ffffff  !important;
+          background-color: #d4d4d4;
+       }
+       .btn-group.open .dropdown-toggle {
+         -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+       }
+       .btn-default.focus, .btn-default:focus {
+          color: #ffffff !important;
+          /* background-color: #e6e6e6; */
+          border-color: #8c8c8c;
+       }
+       .bootstrap-select .btn:focus {
+          outline: none !important;
+       }
+       a:focus {
+        outline: none !important;
+       }
+   </style>
+   
     
 </head>
 
@@ -194,7 +204,7 @@
                 <p id="txt" class="txt2">
                  SMB is an international agency passionate about high-level sports,
                 </p>
-                <p id="dubai">based in Dubaï.</p> 
+                <p id="dubai" class="dubaicss">based in Dubaï.</p> 
                
             </div>
 
