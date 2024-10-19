@@ -27,10 +27,10 @@
          minutesElement.textContent = minutes;
          secondsElement.textContent = seconds;
  
-         if (distance < 0) {
+        /* if (distance < 0) {
              clearInterval(interval);
              countdownElement.textContent = "The wait is over!";
-         }
+         }*/
      };
  
      updateCountdown();
